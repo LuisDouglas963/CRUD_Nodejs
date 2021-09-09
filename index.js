@@ -10,7 +10,7 @@ const post = ["Full Stack", "Dev Front-end", "Dev Back-end"]
 //===========================CRUD==========================//
 
 
-// Retorna um curso - READ ALL
+// Retorna um post - READ ONE
 
 server.get('/post/:index',(req, res) => {
      const { index } = req.params;
@@ -18,7 +18,7 @@ server.get('/post/:index',(req, res) => {
      return res.json(post[index]);
 })
 
-// Retornar todos os posts - READ ONE
+// Retornar todos os posts - READ ALL
 
 server.get('/post',(req, res) => {
     return res.json(post)
